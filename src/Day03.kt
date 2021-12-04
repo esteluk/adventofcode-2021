@@ -29,12 +29,6 @@ fun main() {
         val zero = Char(48)
         val one = Char(49)
 
-//        println("Starting filter with:")
-//
-//        matrix.forEach {
-//            println(it.joinToString())
-//        }
-
         val onesCount = matrix.map { it[column] }.count { it == one }
         val filter = if (onesCount >= (matrix.size - onesCount)) {
             if (isOxygen) one else zero
