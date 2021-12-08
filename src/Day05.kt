@@ -3,10 +3,6 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
 
-    fun isNotDiagonal(a: Pair<Int, Int>, b: Pair<Int, Int>): Boolean {
-        return a.first == b.first || a.second == b.second
-    }
-
     fun pairsInRange(a: Pair<Int, Int>, b: Pair<Int, Int>, diagonal: Boolean): List<Pair<Int, Int>> {
         return if (a.first == b.first) {
             val range = if (a.second < b.second) {
